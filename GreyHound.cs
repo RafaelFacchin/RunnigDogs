@@ -33,6 +33,7 @@ namespace Simulador_de_corrida_de_caes
             //REDEFINIR minha posicao p/ a linha de partida
         }
 
+        //????
         //Point p = MyPictureBox.Location;
         //p.X += distance;
 
