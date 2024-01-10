@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\Simulador de corrida de caes\\Simulador de corrida de caes.csproj": {}
+    "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\PROJ_9\\Simulador de corrida de caes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\Simulador de corrida de caes\\Simulador de corrida de caes.csproj": {
+    "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\PROJ_9\\Simulador de corrida de caes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\Simulador de corrida de caes\\Simulador de corrida de caes.csproj",
+        "projectUniqueName": "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\PROJ_9\\Simulador de corrida de caes.csproj",
         "projectName": "Simulador de corrida de caes",
-        "projectPath": "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\Simulador de corrida de caes\\Simulador de corrida de caes.csproj",
+        "projectPath": "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\PROJ_9\\Simulador de corrida de caes.csproj",
         "packagesPath": "C:\\Users\\Trabalhos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\Simulador de corrida de caes\\obj\\",
+        "outputPath": "C:\\Users\\Trabalhos\\Desktop\\UDEMY Cursos\\CURSOS\\C#_Use a cabeca\\PROJETOS\\#9_Simulador de corrida\\PROJ_9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

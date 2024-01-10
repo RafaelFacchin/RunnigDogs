@@ -6,26 +6,31 @@ using System.Threading.Tasks;
 
 namespace Simulador_de_corrida_de_caes
 {
-    public class Bet
+    public class Aposta
     {
         //**ATRIBUTOS/ CAMPOS
-        public int Amount; //Define a quantidade de dinheiro APOSTADA
-        public int Dog; // Define o numero do cao na qual apostamos
-        public Guy Bettor; //O cara que fez a aposta
+        public int Valor; //Define a quantidade de dinheiro APOSTADA
+        public int Cachorro; // Define o numero do cao na qual apostamos
+        public Cara Apostador; //O cara que fez a aposta
 
         //****METODOS
         //Este metodo retorna uma STRING que DIZ quem fez a aposta, QUANTO dinheiro foi apostado,
         //e em qual CAO foi feita a aposta; se a quantidade for ZERO, a aposta nao foi feita ("Joao nao apostou")
-        public string GetDescription()
+        public string PegarDescricao()
         {
-            return "A";
+            if(Apostador.Carteira >= Valor)
+            {
+                this.Apostador.MyLabel.Text = this.Apostador.Nome + " apostador" + Valor + " reais no cachorro numero " + Cachorro;
+
+            }
+            return Apostador.MyLabel.Text;
         }
 
         //o parametro deste metodo e o vencedor da corrida. Se o cao venceu
         //RETORNE  a quantidade apostada. De outra forma, retorne um valor negativo do valor apostado
-        public int PayOut(int Winner)
+        public int Pagar(int Vencedor)
         {
-            return 0;
+            return Valor;
         }
 
     }
