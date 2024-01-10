@@ -1,0 +1,18 @@
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\bin\Debug\net8.0-windows\Simulador de corrida de caes.exe
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\bin\Debug\net8.0-windows\Simulador de corrida de caes.deps.json
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\bin\Debug\net8.0-windows\Simulador de corrida de caes.runtimeconfig.json
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\bin\Debug\net8.0-windows\Simulador de corrida de caes.dll
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\bin\Debug\net8.0-windows\Simulador de corrida de caes.pdb
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador_de_corrida_de_caes.Form1.resources
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador_de_corrida_de_caes.Properties.Resources.resources
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.csproj.GenerateResource.cache
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.AssemblyInfoInputs.cache
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.AssemblyInfo.cs
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.csproj.CoreCompileInputs.cache
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.sourcelink.json
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.dll
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\refint\Simulador de corrida de caes.dll
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.pdb
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\Simulador de corrida de caes.genruntimeconfig.cache
+C:\Users\Trabalhos\Desktop\UDEMY Cursos\CURSOS\C#_Use a cabeca\PROJETOS\#9_Simulador de corrida\PROJ_9\obj\Debug\net8.0-windows\ref\Simulador de corrida de caes.dll

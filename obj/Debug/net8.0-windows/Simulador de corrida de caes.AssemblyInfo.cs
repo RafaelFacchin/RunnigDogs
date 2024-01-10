@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Simulador de corrida de caes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54e2fcf38f918e7dea799432bbc2221c9c3e2f35")]
 [assembly: System.Reflection.AssemblyProductAttribute("Simulador de corrida de caes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Simulador de corrida de caes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
