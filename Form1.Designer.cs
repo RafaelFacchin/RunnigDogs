@@ -184,9 +184,12 @@
             // numericUpDown2
             // 
             numericUpDown2.Location = new Point(330, 120);
+            numericUpDown2.Maximum = new decimal(new int[] { 4, 0, 0, 0 });
+            numericUpDown2.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(60, 23);
             numericUpDown2.TabIndex = 8;
+            numericUpDown2.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // label3
             // 
@@ -200,6 +203,7 @@
             // numericUpDown1
             // 
             numericUpDown1.Location = new Point(140, 120);
+            numericUpDown1.Maximum = new decimal(new int[] { 15, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(60, 23);
             numericUpDown1.TabIndex = 6;
@@ -233,6 +237,7 @@
             radioButton3.TabStop = true;
             radioButton3.Text = "radioButton3";
             radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -244,6 +249,8 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "radioButton2";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
+            radioButton2.Click += button2_Click;
             // 
             // radioButton1
             // 
@@ -255,6 +262,8 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "radioButton1";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
+            radioButton1.Click += button1_Click;
             // 
             // label1
             // 
@@ -277,7 +286,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Simulador de corrida";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

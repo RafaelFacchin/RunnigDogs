@@ -12,7 +12,7 @@ namespace Simulador_de_corrida_de_caes
     {
         //**ATRIBUTOS/ CAMPOS
         public int PontoInicial = 1; //Posicao onde pictureBox inicia (Coord. "x"
-        public int LarguraDaPista = 750; //O tamanho da pista de corrida
+        public int LarguraDaPista = 700; //O tamanho da pista de corrida
         public PictureBox MyPictureBox = null; // Meu objeto PictureBox
         public int Location = 0; //Minha posicao na pista
         public Random MeuRandom; //Uma instancia randomizada
@@ -25,7 +25,7 @@ namespace Simulador_de_corrida_de_caes
             MeuRandom = new Random(); //Objeto RANDOM (gera os numeros aleatorios)
             correu = MeuRandom.Next(0, 10); //Next: Gera um numero inteiro aleatorio entre 0 e 10
             correu = (correu * MeuRandom.Next(0, 2)) % 5; // "% 5" pega o resto da divisao por 5 (1,2,3,4)
-            correu = (correu % 4) + 1; //***"correu %4"= GERA numeros do resto da divisao por 4 mais 1
+            correu = (correu % 20) + 1; //***"correu %20"= GERA numeros do resto da divisao por 4 mais 1
 
             //Atualize a posicao de PictureBox no formulario
             Point p = MyPictureBox.Location; // Determina a localizacao do Piture box (o cachorro)

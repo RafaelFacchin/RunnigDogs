@@ -59,12 +59,15 @@ namespace Simulador_de_corrida_de_caes
             //***INSTANCIAR OBJETO APOSTA; LIGACAO entre o OBJ CARA com as suas APOSTAS
             ApJoao = new Aposta();
             CaraJoao.MinhaAposta = ApJoao;//LIGA o OBJ "CARA" ao OBJ "APOSTA" para poder Linkar a relacao entre os 2 objetos
+            ApJoao.Apostador = CaraJoao;//CONECTA o apostador com a APOSTA
 
             ApBeto = new Aposta();
             CaraBeto.MinhaAposta = ApBeto;
+            ApBeto.Apostador = CaraBeto;//CONECTA o apostador com a APOSTA
 
             ApAlfredo = new Aposta();
             CaraAlfredo.MinhaAposta = ApAlfredo;
+            ApAlfredo.Apostador = CaraAlfredo;//CONECTA o apostador com a APOSTA
 
             //***FAZER a LIMPEZA para as novas APOSTAS
             CaraJoao.LimparAposta();
@@ -75,8 +78,12 @@ namespace Simulador_de_corrida_de_caes
             CaraJoao.AtualizarLabels();
             CaraBeto.AtualizarLabels();
             CaraAlfredo.AtualizarLabels();
+        }
 
-
+        //MENSAGEM DE CARREGAMENTO DO FORMULARIO
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bem vindo ao nosso simulador de corridas!!!!");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -84,14 +91,14 @@ namespace Simulador_de_corrida_de_caes
             //VERIFICAR qual "radioButton" esta marcado
             if (radioButton1.Checked == true)
             {
-                ApJoao.Valor    = Convert.ToInt32(numericUpDown1.Value); //Associa o valor da APOSTA ao APOSTADOR
+                ApJoao.Valor = Convert.ToInt32(numericUpDown1.Value); //Associa o valor da APOSTA ao APOSTADOR
                 ApJoao.Cachorro = Convert.ToInt32(numericUpDown2.Value); //ASSOCIA o APOSTADOR ao cachorro
                 if (CaraJoao.Carteira >= ApJoao.Valor)
                 {
                     aposta1 = true;
                     radioButton1.Enabled = false; //DETERMINA que o radioButton do apostador seja ativado apenas uma vez
                     radioButton1.Checked = false; //NAO PERMITE QUA A APOSTA SEJA feita novamente
-                    ApJoao.PegarDescricao() ;//Pega a descricao INFORMANDO ao apostador o quanto foi apostado
+                    ApJoao.PegarDescricao();//Pega a descricao INFORMANDO ao apostador o quanto foi apostado
                     CaraJoao.Carteira -= ApJoao.Valor;//RETIRA da carteira do apostador o valor da APOSTA
                     CaraJoao.AtualizarLabels();//ATUALIZAR a label do apostador
                 }
@@ -301,7 +308,7 @@ namespace Simulador_de_corrida_de_caes
             {
                 CaraJoao.MyRadioButton.Enabled = false;
             }
-            if (CaraBeto.Carteira == 0) 
+            if (CaraBeto.Carteira == 0)
             {
                 CaraBeto.MyRadioButton.Enabled = false;
             }
@@ -311,5 +318,110 @@ namespace Simulador_de_corrida_de_caes
             }
 
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            //INDICA a DES marcacao do radioButton
+            label2.Text = CaraJoao.Nome + " Ira apostar R$";
+
+            //INDICA a marcacao do radioButton (Bolinha preta)
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            //INDICA a DES marcacao do radioButton
+            label2.Text = CaraBeto.Nome + " Ira apostar R$";
+
+            //INDICA a marcacao do radioButton (Bolinha preta)
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            //INDICA a DES marcacao do radioButton
+            label2.Text = CaraAlfredo.Nome + " Ira apostar R$";
+
+            //INDICA a marcacao do radioButton (Bolinha preta)
+        }
+
+        private void radioButton1_Click(object sender, EventArgs e)
+        {
+            label2.Text = CaraJoao.Nome;
+
+            //TESTE DE DETERMINANCIA  de valores possiveis de aposta por jogador
+            if (CaraJoao.Carteira < 5) //Se o jogador teiver menos de R$ 5
+            {
+                numericUpDown1.Minimum = 0;//O valor minimo eh 0 (de 0 a 5)
+            }
+            else
+            {
+                numericUpDown1.Minimum = 5;
+            }
+            if (CaraJoao.Carteira < 15)
+            {
+                numericUpDown1.Maximum = CaraJoao.Carteira;
+            }
+            else
+            {
+                numericUpDown1.Maximum = 15;
+            }
+
+            //DETERMINA O VALOR DA APOSTA MINIMA
+            numericUpDown1.Value = numericUpDown1.Minimum;
+
+        }
+
+        private void radioButton2_Click(object sender, EventArgs e)
+        {
+            label2.Text = CaraBeto.Nome;
+
+            //TESTE DE DETERMINANCIA  de valores possiveis de aposta por jogador
+            if (CaraBeto.Carteira < 5) //Se o jogador teiver menos de R$ 5
+            {
+                numericUpDown1.Minimum = 0;//O valor minimo eh 0 (de 0 a 5)
+            }
+            else
+            {
+                numericUpDown1.Minimum = 5;
+            }
+            if (CaraBeto.Carteira < 15)
+            {
+                numericUpDown1.Maximum = CaraBeto.Carteira;
+            }
+            else
+            {
+                numericUpDown1.Maximum = 15;
+            }
+
+            //DETERMINA O VALOR DA APOSTA MINIMA
+            numericUpDown1.Value = numericUpDown1.Minimum;
+        }
+
+        private void radioButton3_Click(object sender, EventArgs e)
+        {
+            label2.Text = CaraAlfredo.Nome;
+
+            //TESTE DE DETERMINANCIA  de valores possiveis de aposta por jogador
+            if (CaraAlfredo.Carteira < 5) //Se o jogador teiver menos de R$ 5
+            {
+                numericUpDown1.Minimum = 0;//O valor minimo eh 0 (de 0 a 5)
+            }
+            else
+            {
+                numericUpDown1.Minimum = 5;
+            }
+            if (CaraAlfredo.Carteira < 15)
+            {
+                numericUpDown1.Maximum = CaraAlfredo.Carteira;
+            }
+            else
+            {
+                numericUpDown1.Maximum = 15;
+            }
+
+            //DETERMINA O VALOR DA APOSTA MINIMA
+            numericUpDown1.Value = numericUpDown1.Minimum;
+        }
+
+        
     }
 }

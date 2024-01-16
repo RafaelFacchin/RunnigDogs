@@ -18,12 +18,12 @@ namespace Simulador_de_corrida_de_caes
         //e em qual CAO foi feita a aposta; se a quantidade for ZERO, a aposta nao foi feita ("Joao nao apostou")
         public string PegarDescricao()
         {
-            if(Apostador.Carteira >= Valor)
+            if(Apostador.Carteira >= Apostador.MinhaAposta.Valor)
             {
-                this.Apostador.MyLabel.Text = this.Apostador.Nome + " apostador" + Valor + " reais no cachorro numero " + Cachorro;
+                this.Apostador.MyLabel.Text = this.Apostador.Nome + " apostadou " + Valor + " reais no cachorro numero " + Cachorro;// MUDA o VALOR da Label do apostador
 
             }
-            return Apostador.MyLabel.Text;
+            return Apostador.MyLabel.Text; //SE O "if" for atendido, EXIBE  a Label ATUALIZADA do apostador
         }
 
         //o parametro deste metodo e o vencedor da corrida. Se o cao venceu
